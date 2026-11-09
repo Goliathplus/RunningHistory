@@ -42,6 +42,10 @@ Borders come from [Cliopatria v0.2.1](https://github.com/Seshat-Global-History-D
 
 Names in parentheses, such as `(British Empire)`, are containers for their members. A container is hidden in any year where its members have records, so areas are not coloured twice.
 
+## Battle layer
+
+Turn on **Battles** at the top right to see 154 hand-selected battles from the last 25 years of the current date. Selecting one jumps to its year, pauses playback, draws a dashed line to the site, highlights belligerents that have border records, and connects battles of the same war in chronological order. Dates and coordinates come from Wikidata; belligerents, results and war groupings are curated in `scripts/battles-curated.txt` and regenerated with `NODE_USE_ENV_PROXY=1 node scripts/build-battles.mjs`. The selection is editorial, not a ranking of importance.
+
 ## Names
 
 English names are the dataset's own. Traditional Chinese names come from Wikidata. Some Wikidata IDs point to the wrong entity (a period, war or person), so the labels were reviewed and 307 were corrected in `scripts/zh-overrides.json`. The 54 polities with no reliable translation show the dataset name.

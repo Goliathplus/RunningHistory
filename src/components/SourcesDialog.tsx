@@ -36,6 +36,8 @@ export function SourcesDialog({ ds, onClose }: { ds: Dataset; onClose: () => voi
       {list(['srcCov1', 'srcCov2', 'srcCov3', 'srcCov4'])}
       <h3>{t('srcReading')}</h3>
       {list(['srcRead1', 'srcRead2', 'srcRead3', 'srcRead4'])}
+      <h3>{t('srcBattles')}</h3>
+      {list(['srcBat1', 'srcBat2', 'srcBat3', 'srcBat4', 'srcBat5'])}
       <h3>{t('srcBase')}</h3>
       {list(['srcBase1', 'srcBase2'])}
     </dialog>

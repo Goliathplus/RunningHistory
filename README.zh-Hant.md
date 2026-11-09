@@ -41,6 +41,10 @@ npm run build && npm run preview   # 正式版本
 
 `(British Empire)` 這類括號名稱是成員的聯集容器，該年已有成員紀錄時會隱藏容器，避免重複疊色。
 
+## 戰役圖層
+
+開啟右上角的「戰役」，可查看當前年代前 25 年內的戰役（共人工挑選 154 場）。選定後會跳到該年、暫停播放、以虛線連到戰場，高亮該年有疆域紀錄的交戰方，並依時間順序連接同一場戰爭的戰役。日期與座標取自 Wikidata；交戰方、結果與戰爭分組整理於 `scripts/battles-curated.txt`，以 `NODE_USE_ENV_PROXY=1 node scripts/build-battles.mjs` 重建。收錄為編輯選擇，並非重要性排名。
+
 ## 譯名
 
 英文使用資料集原名。繁中譯名取自 Wikidata，因部分 ID 指向錯誤實體（時期、戰爭、人物），已逐筆檢視並以 `scripts/zh-overrides.json` 修正 307 筆；54 個政權沒有可靠譯名，顯示原名。

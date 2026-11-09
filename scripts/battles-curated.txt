@@ -1,0 +1,156 @@
+# qid|年份|繁中名|戰爭鍵|甲方|乙方|結果(a/b/d)|旗標(date=年代有爭議,loc=位置約略)
+# 交戰方以 + 分隔：Cliopatria 政權原名，或 ~英文@中文（資料集沒有對應政權時，不做疆域高亮）
+Q733364|-1457|米吉多之戰||New Kingdom of Egypt|~Canaanite coalition@迦南聯軍|a|date
+Q203729|-1274|卡迭石之戰||New Kingdom of Egypt|Hittites|d|date
+Q849474|-853|卡爾卡爾之戰||Neo-Assyrian Empire|~Levantine coalition@黎凡特聯軍|d|
+Q612286|-612|尼尼微陷落||Median Kingdom+Babylonia|Neo-Assyrian Empire|a|
+Q633560|-605|卡爾凱美什之戰||Babylonia|Twenty-sixth Dynasty of Egypt|a|
+Q2313318|-632|城濮之戰||Jin|Chu|a|loc
+Q31900|-490|馬拉松戰役|greco|Greek City-States|Achaemenid Empire|a|
+Q131969|-480|溫泉關戰役|greco|Achaemenid Empire|Greek City-States|a|
+Q178850|-480|薩拉米斯海戰|greco|Greek City-States|Achaemenid Empire|a|
+Q204636|-479|普拉提亞戰役|greco|Greek City-States|Achaemenid Empire|a|
+Q201526|-333|伊蘇斯戰役|alexander|Macedonian Empire|Achaemenid Empire|a|loc
+Q179670|-331|高加米拉戰役|alexander|Macedonian Empire|Achaemenid Empire|a|loc
+Q213074|-326|希達斯皮斯河戰役|alexander|Macedonian Empire|~Paurava kingdom@波魯斯王國|a|loc
+Q1195760|-262|長平之戰||Qin|Zhao|a|date
+Q179591|-216|坎尼會戰|punic2|Carthage|Roman Republic|a|
+Q200056|-202|扎馬戰役|punic2|Roman Republic|Carthage|a|loc
+Q1349891|-202|垓下之戰||Han Dynasty|~Western Chu@西楚|a|loc
+Q131386|-52|阿萊西亞戰役||Roman Republic|~Gallic coalition@高盧聯軍|a|
+Q205887|-53|卡萊戰役||Parthian Empire|Roman Republic|a|
+Q203681|-48|法薩盧斯戰役||~Caesarian forces@凱撒派|~Optimates@元老院派|a|loc
+Q160387|-31|亞克興海戰||~Octavian's forces@屋大維軍|~Antony and Ptolemaic Egypt@安東尼與托勒密埃及|a|
+Q87779|9|條頓堡森林戰役||~Germanic tribes@日耳曼部落|Roman Empire|a|loc
+Q1127337|83|格勞庇烏山戰役||Roman Empire|~Caledonian tribes@喀里多尼亞部落|a|loc
+Q1057910|200|官渡之戰|sanguo|~Cao Cao's forces@曹操軍|~Yuan Shao's forces@袁紹軍|a|
+Q830059|208|赤壁之戰|sanguo|~Sun Quan and Liu Bei@孫權與劉備聯軍|~Cao Cao's forces@曹操軍|a|loc
+Q2887977|224|霍爾木茲甘戰役||Sasanian Empire|Parthian Empire|a|loc
+Q339321|312|米爾維安大橋戰役||~Constantine's forces@君士坦丁軍|~Maxentius's forces@馬克森提烏斯軍|a|
+Q192473|378|阿德里安堡戰役||~Goths@哥德人|Roman Empire|a|
+Q1333898|383|淝水之戰||~Eastern Jin@東晉|Former Qin|a|
+Q486124|624|巴德爾戰役||~Muslims of Medina@麥地那穆斯林|~Quraysh of Mecca@麥加古萊什人|a|
+Q836844|636|卡迪西亞戰役||Rashidun Caliphate|Sasanian Empire|a|date,loc
+Q608727|663|白江口之戰||Tang Dynasty+Silla|~Baekje loyalists and Yamato@百濟復興軍與倭|a|loc
+Q626058|680|卡爾巴拉戰役||Umayyad Caliphate|~Husayn ibn Ali's party@胡笙一行|a|
+Q173077|732|圖爾戰役||Kingdom of the Franks|Umayyad Caliphate|a|loc
+Q492415|751|怛羅斯之戰||Abbasid Caliphate|Tang Dynasty|a|loc
+Q2890760|938|白藤江之戰（938）||~Ngô Quyền's forces@吳權軍|Southern Han|a|
+Q273069|955|萊希菲爾德戰役||Kingdom of Germany|Principality of Hungary|a|
+Q83224|1066|黑斯廷斯戰役||Duchy of Normandy|Kingdom of England|a|
+Q200032|1071|曼齊刻爾特戰役||Great Seljuk Empire|Byzantine Empire|a|loc
+Q968676|1185|壇之浦之戰||~Minamoto clan@源氏|~Taira clan@平氏|a|
+Q233568|1187|哈丁戰役||Ayyubid Sultanate|Kingdom of Jerusalem|a|
+Q2890128|1192|第二次塔蘭戰役||Ghurid Dynasty|Chauhan Dynasty|a|
+Q219697|1212|托洛薩會戰||~Christian Iberian coalition@伊比利基督教聯軍|Almohad Caliphate|a|
+Q1319855|1235|基里納戰役||~Sundiata's Mandinka forces@松迪亞塔的曼丁卡軍|Sosso Empire|a|date,loc
+Q159512|1241|列格尼卡戰役|mongol|Mongol Empire|~Polish and Moravian forces@波蘭與摩拉維亞聯軍|a|
+Q705874|1241|蒂薩河之戰（莫希戰役）|mongol|Mongol Empire|Kingdom of Hungary|a|
+Q369560|1258|巴格達圍城戰|mongol|Mongol Empire|Abbasid Caliphate|a|
+Q244356|1260|艾因賈魯戰役|mongol|Mamluk Sultanate|Mongol Empire|a|
+Q1205096|1267|襄陽之戰|mongol|Mongol Empire|Southern Song|a|
+Q1078359|1279|崖山海戰|mongol|~Yuan Dynasty@元朝|~Southern Song@南宋|a|
+Q1369379|1288|白藤江之戰（1288）|mongol|~Đại Việt@大越|~Yuan Dynasty@元朝|a|
+Q27759|1346|克雷西會戰|hundred|Kingdom of England|Kingdom of France|a|
+Q1291963|1363|鄱陽湖之戰||~Zhu Yuanzhang's forces@朱元璋軍|~Chen Youliang's forces@陳友諒軍|a|
+Q210354|1380|庫利科沃戰役||Grand Principality of Moscow|~Golden Horde (Mamai's forces)@金帳汗國（馬麥軍）|a|loc
+Q179288|1389|科索沃戰役|ottoman|Ottoman Empire|~Serbian coalition@塞爾維亞聯軍|d|
+Q212220|1396|尼科波利斯戰役|ottoman|Ottoman Empire|~Crusader coalition@十字軍聯軍|a|
+Q209387|1402|安卡拉戰役||Timurid Empire|Ottoman Empire|a|
+Q33570|1410|格倫瓦爾德戰役||Kingdom of Poland+Grand Duchy of Lithuania|Teutonic Order|a|
+Q188495|1415|阿金庫爾戰役|hundred|Kingdom of England|Kingdom of France|a|
+Q32832|1444|瓦爾納戰役|ottoman|Ottoman Empire|~Crusader coalition@十字軍聯軍|a|
+Q1196236|1449|土木堡之變||~Oirats@瓦剌|Ming Dynasty|a|
+Q160077|1453|君士坦丁堡陷落|ottoman|Ottoman Empire|Byzantine Empire|a|
+Q745110|1514|查爾迪蘭戰役||Ottoman Empire|Safavid Dynasty|a|
+Q971248|1516|達比克草原戰役||Ottoman Empire|Mamluk Sultanate|a|
+Q2888038|1520|奧通巴戰役|aztec|~Spanish and Tlaxcalan forces@西班牙與特拉斯卡拉聯軍|Aztec Triple Alliance|a|
+Q593267|1521|特諾奇提特蘭陷落|aztec|~Spanish and Indigenous allies@西班牙與原住民盟軍|~Aztec Triple Alliance@阿茲特克三國同盟|a|
+Q605321|1526|第一次帕尼帕特戰役||~Babur's forces@巴布爾軍|Lodi Dynasty|a|
+Q178510|1526|摩哈赤戰役|ottoman|Ottoman Empire|Kingdom of Hungary|a|
+Q1425362|1532|卡哈馬卡戰役||Spanish Empire|Inca Empire|a|
+Q1362188|1565|塔利科塔戰役||~Deccan sultanates@德干諸蘇丹國|Vijayanagara Empire|a|
+Q165425|1571|勒班陀海戰|ottoman|~Holy League@神聖同盟|Ottoman Empire|a|
+Q428369|1575|長篠之戰||~Oda and Tokugawa forces@織田與德川聯軍|~Takeda clan@武田氏|a|
+Q3635360|1576|哈爾迪加蒂戰役||Mughal Empire|~Mewar@梅瓦爾|d|
+Q1121532|1578|三王之戰（凱比爾堡）||Saadi Sultanate|Kingdom of Portugal|a|
+Q487332|1592|閑山島海戰|imjin|Joseon|~Toyotomi Japan@豐臣日本|a|
+Q279611|1593|幸州山城之戰|imjin|Joseon|~Toyotomi Japan@豐臣日本|a|
+Q385677|1597|鳴梁海戰|imjin|Joseon|~Toyotomi Japan@豐臣日本|a|
+Q484271|1598|露梁海戰|imjin|Joseon+Ming Dynasty|~Toyotomi Japan@豐臣日本|a|
+Q234188|1600|關原之戰||~Eastern Army@東軍|~Western Army@西軍|a|
+Q205379|1631|第一次布萊登菲爾德戰役||Swedish Empire|(Holy Roman Empire)|a|
+Q4520158|1644|山海關之戰||~Qing Dynasty@清朝|Li Zicheng|a|
+Q697621|1661|熱蘭遮城之戰||~Koxinga's forces@鄭成功軍|~Dutch East India Company@荷蘭東印度公司|a|
+Q200855|1683|維也納之戰|ottoman|(Holy Roman Empire)+Polish-Lithuanian Commonwealth|Ottoman Empire|a|
+Q152486|1709|波爾塔瓦戰役||Tsardom of Russia|Swedish Empire|a|
+Q203233|1757|普拉西戰役||~British East India Company@英國東印度公司|Nawabs of Bengal|a|
+Q311726|1759|亞伯拉罕平原戰役||Kingdom of Great Britain|Kingdom of France|a|
+Q1259218|1761|第三次帕尼帕特戰役||Durrani Empire|Maratha Empire|a|
+Q2355467|1764|布克薩爾戰役||~British East India Company@英國東印度公司|~Mughal, Awadh and Bengal forces@蒙兀兒、奧德與孟加拉聯軍|a|
+Q846674|1777|薩拉托加戰役|amrev|United States of America|Kingdom of Great Britain|a|
+Q459447|1781|約克鎮圍城戰|amrev|United States of America|Kingdom of Great Britain|a|
+Q4411|1792|瓦爾密戰役||~Revolutionary France@革命法國|Kingdom of Prussia|a|
+Q171416|1805|特拉法加海戰|napoleon|British Empire|First French Empire+Spanish Empire|a|
+Q134114|1805|奧斯特里茨戰役|napoleon|First French Empire|Russian Empire+Habsburg Monarchy|a|
+Q151005|1813|萊比錫戰役|napoleon|~Sixth Coalition@第六次反法同盟|First French Empire|a|
+Q48314|1815|滑鐵盧戰役|napoleon|~Seventh Coalition@第七次反法同盟|~First French Empire@法蘭西第一帝國|a|
+Q1073849|1818|邁普戰役|latam|~Chilean and Andean patriots@智利與安地斯愛國軍|Spanish Empire|a|
+Q1150410|1819|博亞卡戰役|latam|~Patriot army@愛國軍|Spanish Empire|a|
+Q388210|1821|卡拉沃沃戰役|latam|~Patriot army@愛國軍|Spanish Empire|a|
+Q1402751|1822|皮欽查戰役|latam|~Patriot army@愛國軍|Spanish Empire|a|
+Q934157|1824|阿亞庫喬戰役|latam|~Patriot army@愛國軍|Spanish Empire|a|
+Q238440|1827|納瓦里諾海戰||~British, French and Russian fleets@英法俄聯合艦隊|Ottoman Empire|a|
+Q235344|1836|阿拉莫戰役|texas|Centralist Mexico|~Texian defenders@德克薩斯守軍|a|
+Q841278|1836|聖哈辛托戰役|texas|Republic of Texas|Centralist Mexico|a|
+Q1392699|1838|血河戰役||~Voortrekkers@布爾拓荒者|~Zulu Kingdom@祖魯王國|a|
+Q427958|1853|錫諾普海戰|crimea|Russian Empire|Ottoman Empire|a|
+Q464512|1854|巴拉克拉瓦戰役|crimea|~Allied forces@英法鄂聯軍|Russian Empire|d|
+Q815216|1854|塞瓦斯托波爾圍城戰|crimea|~Allied forces@英法鄂聯軍|Russian Empire|a|
+Q324916|1859|索爾費里諾戰役||~France and Sardinia@法國與薩丁尼亞|Austrian Empire|a|
+Q719252|1862|安提坦戰役|uscw|United States of America|Confederate States of America|d|
+Q1066253|1863|維克斯堡圍城戰|uscw|United States of America|Confederate States of America|a|
+Q33132|1863|蓋茨堡戰役|uscw|United States of America|Confederate States of America|a|
+Q1061228|1862|普埃布拉戰役||~Mexican Republic@墨西哥共和軍|Second French Empire|a|
+Q154942|1866|克尼格雷茨戰役||~Kingdom of Prussia@普魯士王國|Austrian Empire|a|
+Q156681|1870|色當戰役||~Prussia and German allies@普魯士與德意志盟軍|Second French Empire|a|
+Q205422|1876|小大角戰役||~Lakota, Northern Cheyenne and Arapaho@拉科塔、北夏延與阿拉帕霍聯軍|United States of America|a|
+Q747589|1879|伊散德爾瓦納戰役|zulu|~Zulu Kingdom@祖魯王國|(British Empire)|a|
+Q2166177|1879|烏倫迪戰役|zulu|(British Empire)|~Zulu Kingdom@祖魯王國|a|
+Q715791|1894|平壤戰役|sinojp1|Empire of Japan|Qing Dynasty|a|
+Q385180|1894|黃海海戰|sinojp1|Empire of Japan|Qing Dynasty|a|
+Q1185335|1895|威海衛之戰|sinojp1|Empire of Japan|Qing Dynasty|a|
+Q302519|1896|阿杜瓦戰役||Ethiopian Empire|Kingdom of Italy|a|
+Q1137302|1898|恩圖曼戰役||(British Empire)|Mahdist State|a|
+Q210800|1904|旅順圍城戰|rusjp|Empire of Japan|Russian Empire|a|
+Q2440191|1904|遼陽會戰|rusjp|Empire of Japan|Russian Empire|a|
+Q384091|1905|奉天會戰|rusjp|Empire of Japan|Russian Empire|a|
+Q153858|1914|坦能堡戰役|ww1|German Empire|Russian Empire|a|
+Q190712|1914|第一次馬恩河戰役|ww1|French Third Republic+(British Empire)|German Empire|a|
+Q130847|1916|凡爾登戰役|ww1|French Third Republic|German Empire|a|
+Q156554|1916|日德蘭海戰|ww1|(British Empire)|German Empire|d|
+Q132568|1916|索姆河戰役|ww1|(British Empire)+French Third Republic|German Empire|d|
+Q821283|1920|華沙戰役||Second Polish Republic|~Soviet Russia@蘇俄|a|
+Q254599|1937|淞滬會戰|sinojp2|Empire of Japan|Republic of China|a|
+Q626796|1938|台兒莊戰役|sinojp2|Republic of China|Empire of Japan|a|
+Q2038907|1938|武漢會戰|sinojp2|Empire of Japan|Republic of China|a|
+Q151290|1941|莫斯科戰役|ww2|Union of Soviet Socialist Republics|Nazi Germany|a|
+Q52418|1941|珍珠港事件|ww2|Empire of Japan|United States of America|a|
+Q296754|1942|新加坡戰役|ww2|Empire of Japan|(British Empire)|a|
+Q173034|1942|中途島海戰|ww2|United States of America|Empire of Japan|a|
+Q38789|1942|史達林格勒戰役|ww2|Union of Soviet Socialist Republics|Nazi Germany|a|
+Q153376|1942|第二次阿拉曼戰役|ww2|(British Empire)|Nazi Germany+Kingdom of Italy|a|
+Q696438|1942|瓜達康納爾海戰|ww2|United States of America|Empire of Japan|a|
+Q130861|1943|庫斯克戰役|ww2|Union of Soviet Socialist Republics|Nazi Germany|a|
+Q707238|1944|英帕爾戰役|ww2|(British Empire)|Empire of Japan|a|
+Q383614|1944|科希馬戰役|ww2|(British Empire)|Empire of Japan|a|
+Q16470|1944|諾曼第登陸|ww2|~Allied forces@同盟國軍|Nazi Germany|a|
+Q308999|1944|雷伊泰灣海戰|ww2|United States of America|Empire of Japan|a|
+Q180182|1945|硫磺島戰役|ww2|United States of America|Empire of Japan|a|
+Q192660|1945|沖繩戰役|ww2|United States of America|Empire of Japan|a|
+Q154182|1945|柏林戰役|ww2|Union of Soviet Socialist Republics|~Nazi Germany@納粹德國|a|
+Q483039|1950|仁川登陸|korea|~UN Command@聯合國軍|Democratic People's Republic of Korea|a|
+Q277337|1950|長津湖戰役|korea|People's Republic of China|~UN Command@聯合國軍|a|
+Q604897|1954|奠邊府戰役||~Viet Minh@越盟|French Fourth Republic|a|
+Q697053|1968|順化戰役|vietnam|~South Vietnam@越南共和國+United States of America|~North Vietnam and Viet Cong@北越與越共|a|
+Q247253|1968|溪山戰役|vietnam|~North Vietnam@北越|United States of America+~South Vietnam@越南共和國|d|

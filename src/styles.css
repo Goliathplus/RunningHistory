@@ -24,13 +24,44 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transform: translate(-50%, -50%);
 }
 
-.masthead { position: fixed; top: 22px; left: 28px; pointer-events: none; max-width: min(430px, calc(100vw - 40px)); }
+.left-rail { position: fixed; top: 22px; left: 28px; bottom: 172px; width: min(430px, calc(100vw - 40px)); display: flex; flex-direction: column; gap: 12px; pointer-events: none; }
+.masthead { flex: none; }
 .masthead h1 { margin: 0; font: 500 15px/1.4 var(--serif); letter-spacing: .28em; color: var(--gold); }
 .year { font: 600 clamp(32px, 4.4vw, 54px)/1.15 var(--serif); margin-top: 6px; font-variant-numeric: tabular-nums; text-shadow: 0 2px 18px rgba(0,0,0,.6); }
 .count { font-size: 14px; color: var(--ink-soft); margin-top: 2px; }
 .notice { margin-top: 12px; padding: 8px 12px; font-size: 13.5px; line-height: 1.55; border-left: 3px solid; background: var(--panel); border-radius: 0 6px 6px 0; }
 .notice-gap { border-color: #e9866f; }
 .notice-sparse { border-color: var(--gold); }
+
+.globe-host + .leader { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; }
+.leader path { fill: none; stroke: #ffd79a; stroke-width: 1.3; stroke-dasharray: 5 5; }
+.leader circle { fill: none; stroke: #ffd79a; stroke-width: 1.5; }
+.sequence-label { color: #ffd79a; font-size: 11.5px; white-space: nowrap; pointer-events: none; text-shadow: 0 0 3px #071019, 0 0 3px #071019; transform: translate(-50%, -140%); }
+
+.battle-panel { pointer-events: auto; width: 320px; min-height: 0; display: flex; flex-direction: column; padding: 12px 6px 8px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; backdrop-filter: blur(10px); }
+.battle-panel h2 { flex: none; margin: 0 8px 6px 0; font: 600 16px/1.4 var(--serif); color: var(--gold); display: flex; align-items: baseline; justify-content: space-between; }
+.battle-panel small { font: 12px var(--sans); color: var(--ink-soft); }
+.battle-list { overflow-y: auto; min-height: 0; padding-right: 6px; }
+.battle-empty { margin: 4px 0 6px; font-size: 13px; color: var(--ink-soft); }
+.battle-row { border-top: 1px solid rgba(224,187,116,.12); }
+.battle-row:first-child { border-top: 0; }
+.battle-row > button { width: 100%; display: flex; gap: 10px; align-items: baseline; padding: 7px 4px; text-align: left; border-radius: 4px; }
+.battle-row > button:hover { background: rgba(255,255,255,.07); }
+.battle-row.selected > button { color: #ffd79a; }
+.battle-year { flex: none; min-width: 64px; font-size: 12px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.battle-name { font-size: 14px; line-height: 1.4; }
+.battle-details { padding: 2px 4px 11px; }
+.battle-details dl { margin: 0; }
+.battle-details dt { margin-top: 7px; font-size: 12px; color: var(--ink-soft); }
+.battle-details dd { margin: 0; font-size: 13.5px; line-height: 1.5; }
+.sides { display: grid; gap: 2px; }
+.side-swatch { display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 2px; }
+.side-a { background: #5cc8e6; }
+.side-b { background: #f08260; }
+.battle-tags { display: flex; gap: 6px; flex-wrap: wrap; margin: 9px 0 0; }
+.battle-tags span { padding: 1px 7px; font-size: 11.5px; color: #17222b; background: var(--gold); border-radius: 3px; }
+.battle-seq { display: flex; align-items: center; gap: 7px; margin: 9px 0 0; font-size: 12px; color: var(--ink-soft); }
+.battle-seq i { width: 22px; border-top: 1.5px dashed #ffd79a; }
 
 .tools { position: fixed; top: 22px; right: 26px; display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
 .btn-text { padding: 7px 12px; font-size: 13.5px; border-radius: 6px; background: var(--panel); border: 1px solid var(--line); transition: background .15s; }
@@ -103,7 +134,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .load-error { color: #e9866f; }
 
 @media (max-width: 760px) {
-  .masthead { top: 12px; left: 14px; }
+  .left-rail { top: 12px; left: 14px; bottom: auto; }
+  .leader { display: none; }
+  .battle-panel { position: fixed; left: 14px; right: 14px; bottom: 262px; width: auto; max-height: 30vh; z-index: 3; }
+  .battle-panel.mobile-hidden { display: none; }
   .tools { top: auto; bottom: 186px; right: 14px; left: 14px; justify-content: center; }
   .card { top: auto; bottom: 236px; right: 14px; left: 14px; width: auto; max-height: 34vh; }
   .legend, .attribution { display: none; }

@@ -124,6 +124,43 @@ try {
     await page.locator('dialog .card-close').click();
   });
 
+  await check('戰役面板：預設關閉，選定後跳年、虛線、細節與時間順序', async () => {
+    await open('year=1285&paused');
+    assert.equal(await page.getByTestId('battle-panel').count(), 0);
+    await page.getByTestId('battles-toggle').click();
+    const row = page.locator('[data-battle="Q1078359"]');
+    await row.waitFor();
+    assert.match(await row.textContent(), /崖山海戰/);
+    assert.equal(await page.getByTestId('leader').evaluate((e) => e.style.display), 'none');
+    await row.hover();
+    await page.waitForFunction(() => document.querySelector('[data-testid=leader]').style.display !== 'none');
+    await row.click();
+    await page.getByTestId('battle-details').waitFor();
+    assert.equal(await year(), '西元 1279 年');
+    const details = await page.getByTestId('battle-details').textContent();
+    assert.match(details, /蒙古征服戰爭/);
+    assert.match(details, /元朝勝/);
+    assert.match(details, /時間順序/);
+    await page.mouse.move(900, 300);
+    await page.waitForTimeout(2500);
+    assert.ok(await page.getByTestId('leader').evaluate((e) => e.getAttribute('d')?.startsWith('M')));
+    await page.waitForFunction(() => [...document.querySelectorAll('.sequence-label')].some((e) => e.textContent === '時間順序'), null, { timeout: 20000 });
+    await page.screenshot({ path: `${SHOTS}/battle-selected.png` });
+    await page.keyboard.press('ArrowLeft');
+    await page.waitForTimeout(200);
+    assert.equal(await page.getByTestId('battle-details').count(), 0);
+  });
+
+  await check('戰役：交戰方疆域高亮與有爭議標記', async () => {
+    await open('year=-202&paused');
+    await page.getByTestId('battles-toggle').click();
+    await page.locator('[data-battle="Q200056"]').click();
+    await page.getByTestId('battle-details').waitFor();
+    assert.match(await page.getByTestId('battle-details').textContent(), /位置約略/);
+    await page.waitForTimeout(2500);
+    await page.screenshot({ path: `${SHOTS}/battle-zama.png` });
+  });
+
   await check('語言切換：介面、年份與政權名稱', async () => {
     await open('year=117&paused', '');
     const select = page.getByTestId('lang');
