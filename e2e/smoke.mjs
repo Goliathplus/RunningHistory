@@ -27,8 +27,8 @@ page.on('console', (m) => { if (m.type() === 'error') errors.push(`console: ${m.
 
 const year = () => page.getByTestId('year').textContent();
 const count = () => page.getByTestId('count').textContent();
-const open = async (query) => {
-  await page.goto(`${BASE}?${query}`);
+const open = async (query, lang = '&lang=zh-Hant') => {
+  await page.goto(`${BASE}?${query}${lang}`);
   await page.waitForSelector('.loading', { state: 'detached', timeout: 120000 });
 };
 const drawnCount = () => page.getByTestId('globe').evaluate((el) => (el.dataset.drawn ? el.dataset.drawn.split(',').length : 0));
@@ -125,9 +125,8 @@ try {
   });
 
   await check('語言切換：介面、年份與政權名稱', async () => {
-    await open('year=117&paused');
+    await open('year=117&paused', '');
     const select = page.getByTestId('lang');
-    await select.selectOption('en');
     assert.equal(await year(), '117 CE');
     assert.equal(await page.locator('html').getAttribute('lang'), 'en');
     await page.waitForFunction(() => [...document.querySelectorAll('.globe-label')].some((e) => e.textContent === 'Roman Empire'), null, { timeout: 30000 });

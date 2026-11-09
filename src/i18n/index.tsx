@@ -20,7 +20,7 @@ export function initialLang(): Lang {
   if (isLang(param)) return param;
   const stored = localStorage.getItem(STORAGE_KEY);
   if (isLang(stored)) return stored;
-  return /^en\b/i.test(navigator.language) ? 'en' : 'zh-Hant';
+  return 'en';
 }
 
 interface I18n {

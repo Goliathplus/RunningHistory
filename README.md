@@ -1,64 +1,71 @@
-# 世界疆域變遷 · Changing Borders of the World
+# Changing Borders of the World
 
-互動式 3D 地球儀，呈現西元前 3400 年至西元 2024 年的政權疆域。介面支援繁體中文與 English。
-React + TypeScript + globe.gl（Three.js）。
+English | [繁體中文](README.zh-Hant.md)
 
-## 啟動
+An interactive 3D globe showing the territories of polities from 3400 BCE to 2024 CE. The interface is in English by default and can be switched to Traditional Chinese. Built with React, TypeScript and globe.gl (Three.js).
 
-需要 Node.js 20 以上。
+**Live site:** https://goliathplus.github.io/RunningHistory/
+
+## Getting started
+
+Requires Node.js 20 or later.
 
 ```bash
 npm install
-npm run dev        # 開發模式，開啟終端機顯示的網址
-npm run build && npm run preview   # 正式版本
+npm run dev                        # development server
+npm run build && npm run preview   # production build
 ```
 
-資料已包含在 `public/data/`，不需另外下載。網址參數：`?year=-500&paused&lang=en`。
+The data is already in `public/data/`, so there is nothing else to download. URL parameters: `?year=-500&paused&lang=zh-Hant`.
 
-## 操作
+## Controls
 
-| 動作 | 方式 |
+| Action | How |
 |---|---|
-| 播放／暫停 | 播放鈕或空白鍵 |
-| 調整速度 | 10–250 年／秒 |
-| 移動時間 | 拖曳時間軸；← → 每次 10 年，按住 Shift 每次 100 年 |
-| 旋轉、縮放 | 拖曳、滾輪或雙指 |
-| 查看政權 | 滑過顯示名稱與年代，點擊看詳情 |
-| 切換語言 | 右上角選單（選擇會被記住） |
+| Play / pause | Play button or Space |
+| Change speed | 10–250 years per second |
+| Move through time | Drag the timeline; ← → step 10 years, hold Shift for 100 |
+| Rotate / zoom | Drag, scroll wheel or pinch |
+| Inspect a polity | Hover for name and years, click for details |
+| Change language | Menu at the top right (your choice is remembered) |
 
-## 資料與不確定性
+## Data and uncertainty
 
-疆域來自 [Cliopatria v0.2.1](https://github.com/Seshat-Global-History-Databank/cliopatria)（Seshat，CC BY 4.0；[論文](https://doi.org/10.1038/s41597-025-04516-9)）。
+Borders come from [Cliopatria v0.2.1](https://github.com/Seshat-Global-History-Databank/cliopatria) (Seshat Global History Databank, CC BY 4.0; [paper](https://doi.org/10.1038/s41597-025-04516-9)).
 
-- **西元前 3500–前 3401 年是空白**：資料集最早的紀錄是西元前 3400 年，此段不繪製疆域。
-- **資料截至 2024 年。**
-- 只顯示資料集在該年實際有的紀錄，不內插，也不用最近資料填補。
-- 空白的陸地代表資料集沒有多邊形，不代表沒有社會或政治組織。
-- 邊界是估計值。資料集沒有逐筆信心值，所以介面不顯示信心分數。
-- 灰色陸地是現代海岸線，只作定位，不含現代國界。
+- **3500–3401 BCE is empty.** The earliest record is from 3400 BCE, so no borders are drawn before it.
+- **The data ends in 2024.**
+- Only records that exist for the selected year are shown. Nothing is interpolated, and gaps are never filled with the nearest data.
+- Empty land means the dataset has no polygon there. It does not mean there were no societies or political organisation.
+- Borders are estimates. The dataset has no per-record confidence value, so the interface shows no confidence score.
+- The grey land is the modern coastline, for orientation only, with no modern national borders.
 
-`(British Empire)` 這類括號名稱是成員的聯集容器，該年已有成員紀錄時會隱藏容器，避免重複疊色。
+Names in parentheses, such as `(British Empire)`, are containers for their members. A container is hidden in any year where its members have records, so areas are not coloured twice.
 
-## 譯名
+## Names
 
-英文使用資料集原名。繁中譯名取自 Wikidata，因部分 ID 指向錯誤實體（時期、戰爭、人物），已逐筆檢視並以 `scripts/zh-overrides.json` 修正 307 筆；54 個政權沒有可靠譯名，顯示原名。
+English names are the dataset's own. Traditional Chinese names come from Wikidata. Some Wikidata IDs point to the wrong entity (a period, war or person), so the labels were reviewed and 307 were corrected in `scripts/zh-overrides.json`. The 54 polities with no reliable translation show the dataset name.
 
-新增語言：加入 `src/i18n/<lang>.json`，在 `src/i18n/index.tsx` 註冊，並於資料管線提供經校對的政權譯名。
+To add a language, add `src/i18n/<lang>.json`, register it in `src/i18n/index.tsx`, and supply reviewed polity names through the data pipeline.
 
-## 測試
-
-```bash
-npm test                               # 單元測試
-npm run build && npm run test:e2e      # 瀏覽器測試（可用 CHROME_PATH 指定瀏覽器）
-```
-
-## 重建資料
+## Tests
 
 ```bash
-npm run data                           # 下載固定版本並重新產生 public/data/
-NODE_USE_ENV_PROXY=1 node scripts/fetch-zh-names.mjs   # 更新 Wikidata 譯名（需在 data 之後）
+npm test                            # unit tests
+npm run build && npm run test:e2e   # browser tests (set CHROME_PATH to choose a browser)
 ```
 
-## 授權
+## Rebuilding the data
 
-資料授權見 [`public/data/NOTICE.md`](public/data/NOTICE.md)。公開部署時請保留頁面上的資料來源標示。
+```bash
+npm run data                                          # download the pinned version and regenerate public/data/
+NODE_USE_ENV_PROXY=1 node scripts/fetch-zh-names.mjs  # refresh Wikidata names (run after npm run data)
+```
+
+## Deployment
+
+Run `npm run build:pages`, then publish `dist/` to the `gh-pages` branch.
+
+## License
+
+See [`public/data/NOTICE.md`](public/data/NOTICE.md) for data licensing. Keep the source attribution on the page when deploying publicly.

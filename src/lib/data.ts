@@ -4,6 +4,8 @@ import type { Feature, MultiPolygon, Polygon, Position } from 'geojson';
 import polylabel from 'polylabel';
 import { DATA_END_YEAR, DATA_START_YEAR, posToYear, yearToPos, type Lang } from './years';
 
+declare const __DATA_BYTES__: number;
+
 export interface PolityName {
   en: string;
   zh: string | null;
@@ -81,7 +83,6 @@ export class LoadError extends Error {
 export async function loadDataset(onProgress?: (fraction: number) => void): Promise<Dataset> {
   const res = await fetch(`${import.meta.env.BASE_URL}data/polities.json`);
   if (!res.ok || !res.body) throw new LoadError(res.status);
-  const total = Number(res.headers.get('content-length')) || 0;
   const reader = res.body.getReader();
   const chunks: Uint8Array[] = [];
   let received = 0;
@@ -90,7 +91,7 @@ export async function loadDataset(onProgress?: (fraction: number) => void): Prom
     if (done) break;
     chunks.push(value);
     received += value.length;
-    if (total) onProgress?.(Math.min(1, received / total));
+    onProgress?.(Math.min(1, received / __DATA_BYTES__));
   }
   const file: DataFile = JSON.parse(await new Blob(chunks as BlobPart[]).text());
   const rows: Row[] = file.rows.map(([n, from, to, area, wikipedia, wikidata, seshat, memberOf], id) => ({
